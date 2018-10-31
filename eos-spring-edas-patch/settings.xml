@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository>${user.home}/workspaces/mvn-repos</localRepository>
+    <pluginGroups>
+    </pluginGroups>
+    <proxies>
+    </proxies>
+    <servers>
+        <server>
+            <id>primeton-public-repository</id>
+            <username>admin</username>
+            <password>admin123456</password>
+        </server>
+        <server>
+            <id>primeton-public-maven-plugin-repository</id>
+            <username>admin</username>
+            <password>admin123456</password>
+        </server>
+    </servers>
+	
+    <!-- 由于目前上海公司的网络不能正常访问apache maven中央仓库，使用上海公司网络需要把maven中央仓库修改成阿里云开放的maven中央仓库 -->
+    <!-- 阿里云的maven中央仓库的下载速度还是比较快的，建议都使用这个，如果您访问apache maven中央仓库比阿里云的速度快可以注释或删除mirror配置块 -->
+    <mirrors>
+        <mirror>
+            <id>aliyun</id>
+            <name>aliyun maven repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+    </mirrors>
+    <profiles>
+        <profile>
+            <id>primeton-profile</id>
+            <repositories>
+                <repository>
+                    <id>primeton-public-repository</id>
+                    <url>http://192.168.2.1:8081/nexus/content/groups/primeton_public_repositories/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>primeton-public-maven-plugin-repository</id>
+                    <url>http://192.168.2.1:8081/nexus/content/groups/primeton_public_maven_repositories/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>primeton-profile</activeProfile>
+    </activeProfiles>
+</settings>
