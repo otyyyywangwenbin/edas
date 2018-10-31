@@ -10,6 +10,10 @@
 		<param-name>resteasy.injector.factory</param-name>
 		<param-value>com.primeton.components.rest.extend.JSONInjectorFactoryImpl</param-value>
 	 </context-param>
+	 <context-param>
+		<param-name>AdminPort</param-name>
+		<param-value>6201</param-value>
+	</context-param>
 	 
 	<filter>
 		<filter-name>InterceptorFilter</filter-name>

@@ -49,6 +49,7 @@
 	<bean id="BeanInterceptor" class="com.primeton.spring.interceptor.BeanInterceptor"/>
 
 	<!-- auto bean proxy -->
+	<!--  
 	<bean class="com.primeton.spring.BeanNameAutoProxy">
 	    <property name="proxyTargetClass">
    			<value>true</value>
@@ -62,4 +63,5 @@
 			</list>
 		</property>
 	</bean>
+	-->
 </beans>

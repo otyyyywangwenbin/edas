@@ -15,12 +15,14 @@
 	-->
     <module name="DataSource">
         <!--system default datasouce -->
+        <!--  
 		<group name="default">
 			<configValue key="Jndi-Name">DefaultDataSource</configValue>
 			<configValue key="Transaction-Isolation">ISOLATION_READ_COMMITTED</configValue>
 			<configValue key="Test-Connect-Sql">SELECT count(*) from EOS_UNIQUE_TABLE</configValue>
 			<configValue key="Retry-Connect-Count">-1</configValue>
 		</group>
+		-->
         <!--
 		C3p0-DriverClass[required],C3p0-Url[required]:
 		1、DB2
@@ -30,22 +32,18 @@
 		5、SqlServer
 		6、Sybase
 		-->
-        <!--
-		<group name="default">
-			<configValue key="C3p0-DriverClass">com.ibm.db2.jcc.DB2Driver</configValue>
-			<configValue key="C3p0-Url">jdbc:db2://192.168.1.251:50000/eos</configValue>
-			<configValue key="C3p0-UserName">eos6si</configValue>
-			<configValue key="C3p0-Password">eos6si</configValue>
+        <group name="default">
+			<configValue key="C3p0-DriverClass">com.mysql.jdbc.Driver</configValue>
+			<configValue key="C3p0-Url">jdbc:mysql://10.15.15.132:3306/platform80</configValue>
+			<configValue key="C3p0-UserName">root</configValue>
+			<configValue key="C3p0-Password">primeton4cloud</configValue>
 			<configValue key="C3p0-PoolSize">10</configValue>
 			<configValue key="C3p0-MaxPoolSize">50</configValue>
 			<configValue key="C3p0-MinPoolSize">10</configValue>
 			<configValue key="Transaction-Isolation">ISOLATION_READ_COMMITTED</configValue>
-			<configValue key="Database-Type">DB2</configValue>
-			<configValue key="Jdbc-Type">IBM DB2 Driver(Type4)</configValue>
 			<configValue key="Test-Connect-Sql">SELECT count(*) from EOS_UNIQUE_TABLE</configValue>
 			<configValue key="Retry-Connect-Count">-1</configValue>
 		</group>
-		-->
 
         <!--UDDI storeage datasouce.UDDI of all applications are stored in the same datasouce.-->
         <!--
