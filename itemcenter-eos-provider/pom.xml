@@ -136,8 +136,8 @@
 								javax.servlet:jsp-api:${jsp-api.version},
 							</jarStrs>
 							<licenseFile>/Users/wangwb/programs/primeton/eos-platform-76/apps_config/default/license/primetonlicense.xml</licenseFile>
-							<appName>itemcenter-eos-impl</appName>
-							<warName>itemcenter-eos-impl</warName>
+							<appName>itemcenter-eos-provider</appName>
+							<warName>itemcenter-eos-provider</warName>
 							<replaceAppName>true</replaceAppName>
 							<outputDir>${basedir}/target</outputDir>
 						</configuration>

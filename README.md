@@ -37,3 +37,8 @@
    再在maven-eos-war-build-plugin的<jarStrs>里增加
 		mysql:mysql-connector-java:${mysql.jdbc.version}
 
+
+
+mvn -gs settings.xml -f eos-spring-edas-patch/pom.xml clean install
+mvn -gs settings.xml -f itemcenter-api/pom.xml clean install
+mvn -gs settings.xml -f itemcenter-eos-provider/pom.xml clean package
