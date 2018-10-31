@@ -13,7 +13,11 @@
 	 <context-param>
 		<param-name>AdminPort</param-name>
 		<param-value>6201</param-value>
-	</context-param>
+	 </context-param>
+	 <context-param>
+		<param-name>LocalIP</param-name>
+		<param-value>127.0.0.1</param-value>
+	 </context-param>
 	 
 	<filter>
 		<filter-name>InterceptorFilter</filter-name>

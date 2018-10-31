@@ -92,7 +92,7 @@
 								</otherProject>
 							</otherProjects>
 							<contributions>
-								com.alibaba.edas.carshop,
+								com.primeton.eos.edas.demo.carshop.itemcenter,
 
 							</contributions>
 						</configuration>
@@ -119,7 +119,7 @@
 								${eos.default.ecds},
 								${bps.default.ecds},
 								${coframe.default.ecds},
-								${basedir}/target/com.alibaba.edas.carshop-1.0.0-SNAPSHOT.ecd</ecdStrs>
+								${basedir}/target/itemcenter-eos-provider-1.0.0.ecd</ecdStrs>
 							<jarStrs>
 								${eos.default.jars},
 								${bps.default.jars},
