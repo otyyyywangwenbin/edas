@@ -140,6 +140,7 @@
 							<warName>itemcenter-eos-provider</warName>
 							<replaceAppName>true</replaceAppName>
 							<outputDir>${basedir}/target</outputDir>
+							<isDeleteTempDir>false</isDeleteTempDir>
 						</configuration>
 					</execution>
 				</executions>
