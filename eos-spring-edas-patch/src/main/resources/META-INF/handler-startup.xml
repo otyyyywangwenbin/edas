@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<handlers>
+	<handler
+		handle-class="com.primeton.eos.spring.edas.SpringContetEagerlyInitialization" order="10000"/>
+</handlers>

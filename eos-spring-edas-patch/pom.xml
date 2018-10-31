@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.primeton.eos</groupId>
+	<artifactId>eos-spring-edas-patch</artifactId>
+	<version>1.0.0</version>
+	<properties>
+		<ptp.version>5.1.4.0</ptp.version>
+		<eos.version>7.1.4.0</eos.version>
+		<bps.version>7.0.1.0</bps.version>
+		<coframe.version>4.0.1</coframe.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.primeton.eos.server</groupId>
+			<artifactId>eos-server-runtime</artifactId>
+			<version>${eos.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.primeton.eos.server</groupId>
+			<artifactId>eos-server-spring</artifactId>
+			<version>${eos.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.primeton.3rd.springsource</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>3.2.17.RELEASE</version>
+		</dependency>
+	</dependencies>
+</project>
