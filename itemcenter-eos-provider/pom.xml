@@ -130,6 +130,7 @@
 								com.primeton.eos.edas.demo:itemcenter-api:1.0.0-SNAPSHOT,
 								com.alibaba.edas:edas-sdk:${edas-sdk.version},
 								mysql:mysql-connector-java:${mysql.jdbc.version},
+								commons-el:commons-el:${commons-el.version},
 								tomcat:jasper-compiler-jdt:${jasper.version},
 								tomcat:jasper-compiler:${jasper.version},
 								tomcat:jasper-runtime:${jasper.version},

@@ -167,3 +167,5 @@ buildNumber.properties
 
 
 # End of https://www.gitignore.io/api/intellij,eclipse,maven,macos
+_work_itemcenter-eos-provider_*
+hsf.lock
